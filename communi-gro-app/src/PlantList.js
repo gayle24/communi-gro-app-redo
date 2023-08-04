@@ -6,7 +6,7 @@ function PlantList({plants}) {
     // console.log(plants)
     
     const navigate = useNavigate();
-    const disp = plants.map(plant=>{
+    const disp = plants.array.forEach(plant=>{
 
         // console.log(Object.keys(plant) );
             if(plant.default_image){
@@ -21,6 +21,7 @@ function PlantList({plants}) {
             // console.log(plant)
         
     })
+    console.log(disp);
 
     function handleClick(){
         navigate("/buyplant");
